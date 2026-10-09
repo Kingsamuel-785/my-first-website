@@ -1,0 +1,308 @@
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+a {
+    transition: 0.3s;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    background: #172033;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #55a5ff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #55a5ff;
+}
+
+
+/* HOME SECTION */
+
+.hero {
+    background: linear-gradient(135deg, #10182b, #1765b5);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.welcome {
+    color: #80bdff;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 6vw, 54px);
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #55c8ff;
+}
+
+.hero h2 {
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: normal;
+}
+
+.hero-text {
+    max-width: 720px;
+    margin: 25px auto;
+    font-size: 18px;
+}
+
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background: #1a73e8;
+    color: white;
+    padding: 13px 25px;
+    margin-top: 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #1558b0;
+    transform: translateY(-2px);
+}
+
+
+/* GENERAL SECTIONS */
+
+.section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 65px 25px;
+    scroll-margin-top: 75px;
+}
+
+.section h2 {
+    color: #1a73e8;
+    font-size: 30px;
+    border-bottom: 2px solid #d6e6fa;
+    padding-bottom: 10px;
+}
+
+.section > p {
+    font-size: 17px;
+}
+
+
+/* SKILLS */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(140px, 1fr)
+    );
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px 12px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    border-bottom: 3px solid #1a73e8;
+}
+
+
+/* PROJECTS */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+    color: #1a73e8;
+}
+
+.project-card span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #536579;
+}
+
+
+/* CALCULATOR */
+
+.calculator {
+    max-width: 420px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 25px;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.calculator input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccd5e0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.calculator input:focus {
+    outline: 2px solid #80bdff;
+    border-color: #1a73e8;
+}
+
+.calculator-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.calculator-buttons button {
+    flex: 1;
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.calculator-buttons button:hover {
+    background: #1558b0;
+}
+
+.calculator-buttons button:active {
+    transform: scale(0.96);
+}
+
+#result {
+    background: #eef5ff;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+    min-height: 55px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #172033;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 75px 18px;
+    }
+
+    .section {
+        padding: 45px 18px;
+    }
+
+    .calculator {
+        padding: 18px;
+    }
+}
